@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow &amp; Grace Salon | Luxury Hair, Skin &amp; Bridal Beauty</title>
+  <meta name="description" content="Glow & Grace Salon offers personalised haircuts, hair spa, colouring, facials, nail care and bridal makeup in a warm, elegant setting. Demo website.">
+  <meta name="theme-color" content="#0d0d0d">
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Jost (body). Fallback fonts CSS mein hain -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Apni CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo" aria-label="Glow &amp; Grace Salon - Home">
+        Glow <span>&amp;</span> Grace
+        <small>Salon</small>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#appointment" class="btn btn-gold nav-cta">Book an Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1800&q=80"
+          data-fallback="assets/images/hero.jpg"
+          alt="Elegant salon interior with styling chairs and warm lighting"
+          class="js-img"
+          fetchpriority="high">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Luxury Salon &amp; Beauty Studio</p>
+        <h1>Your Beauty, <em>Our Passion</em></h1>
+        <p class="hero-text">Discover personalised beauty and self-care experiences in a warm, elegant setting.</p>
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-gold">Book an Appointment</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-images reveal">
+          <img
+            src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80"
+            data-fallback="assets/images/about-1.jpg"
+            alt="Stylist carefully styling a client's hair"
+            class="js-img about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
+            data-fallback="assets/images/about-2.jpg"
+            alt="Relaxing facial treatment in progress"
+            class="js-img about-img-small">
+        </div>
+        <div class="about-text reveal">
+          <p class="eyebrow eyebrow-dark">About Us</p>
+          <h2>Where Comfort Meets <em>Elegance</em></h2>
+          <span class="gold-line" aria-hidden="true"></span>
+          <p>Glow &amp; Grace Salon is a fictional luxury salon created for this demo website. We imagine a space where every visit feels calm, personal and unhurried.</p>
+          <p>Our approach is simple: listen first, then recommend. From a fresh haircut to a complete bridal look, each service is planned around your hair, your skin and your style, with a comfortable setting that lets you relax.</p>
+          <ul class="about-points">
+            <li>Personalised consultation before every service</li>
+            <li>Comfortable, clean and welcoming space</li>
+            <li>Wide range of hair, skin, nail and bridal services</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark">Visit Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">What We Offer</p>
+          <h2>Our <em>Services</em></h2>
+          <span class="gold-line center" aria-hidden="true"></span>
+          <p>Beauty and self-care services designed around you.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-haircut.jpg"
+                   alt="Stylist cutting and styling hair" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Haircut &amp; Styling</h3>
+              <p>Precision cuts and finishing styles that suit your face shape, hair type and daily routine.</p>
+              <p class="price">From <strong>₹499</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-hair-spa.jpg"
+                   alt="Hair spa and nourishing hair treatment" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Hair Spa</h3>
+              <p>A relaxing, nourishing treatment to help your hair feel soft, smooth and refreshed.</p>
+              <p class="price">From <strong>₹1,299</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-colour.jpg"
+                   alt="Hair colouring with a brush and foils" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Hair Colouring</h3>
+              <p>From subtle highlights to bold colour changes, planned together after a proper consultation.</p>
+              <p class="price">From <strong>₹2,499</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-facial.jpg"
+                   alt="Woman enjoying a facial skincare treatment" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Facial &amp; Skincare</h3>
+              <p>Gentle cleansing and glow-focused facials chosen according to your skin type and needs.</p>
+              <p class="price">From <strong>₹1,499</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-nails.jpg"
+                   alt="Neatly painted manicure with elegant nail colour" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Manicure &amp; Pedicure</h3>
+              <p>Careful nail shaping, hand and foot care, and polish finishes in a calm, hygienic setting.</p>
+              <p class="price">From <strong>₹999</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+          <article class="card service-card reveal">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80"
+                   data-fallback="assets/images/service-bridal.jpg"
+                   alt="Makeup artist applying bridal makeup" class="js-img" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Bridal Makeup</h3>
+              <p>A complete bridal look planned in advance, so you feel confident and comfortable on your big day.</p>
+              <p class="price">From <strong>₹15,000</strong> <span>(sample price)</span></p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="note reveal"><strong>Note:</strong> All prices shown are illustrative sample prices for demonstration only. They must be confirmed with the salon before this website is used by a real business.</p>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section-head section-head-light reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>The Glow &amp; Grace <em>Difference</em></h2>
+          <span class="gold-line center" aria-hidden="true"></span>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">✦</span>
+            <h3>Personalised Care</h3>
+            <p>Every visit starts with listening, so your service matches your needs and comfort.</p>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">◈</span>
+            <h3>Attention to Detail</h3>
+            <p>We take time over the small finishing touches that make the whole look come together.</p>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">❖</span>
+            <h3>Comfortable Environment</h3>
+            <p>A calm, warm and welcoming space where you can relax and enjoy your time.</p>
+          </div>
+          <div class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">❂</span>
+            <h3>Tailored to You</h3>
+            <p>Services are shaped around your individual preferences, style and lifestyle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Our Gallery</p>
+          <h2>Moments of <em>Beauty</em></h2>
+          <span class="gold-line center" aria-hidden="true"></span>
+          <p>Hairstyles, treatments, nail art and a look inside our space. Click any photo to enlarge.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <button type="button" class="gallery-item gallery-tall reveal" data-full="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-1.jpg" aria-label="Open image: Elegant hairstyle">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-1.jpg" alt="Elegant long hairstyle with soft waves" class="js-img" loading="lazy">
+            <span class="gallery-cap">Hairstyles</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-2.jpg" aria-label="Open image: Nail art">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-2.jpg" alt="Delicate nail art in soft colours" class="js-img" loading="lazy">
+            <span class="gallery-cap">Nail Art</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-3.jpg" aria-label="Open image: Salon interior">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-3.jpg" alt="Stylish salon interior with mirrors and chairs" class="js-img" loading="lazy">
+            <span class="gallery-cap">Salon Interior</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-4.jpg" aria-label="Open image: Facial treatment">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-4.jpg" alt="Calm facial treatment with a face mask" class="js-img" loading="lazy">
+            <span class="gallery-cap">Facial Care</span>
+          </button>
+
+          <button type="button" class="gallery-item gallery-tall reveal" data-full="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-5.jpg" aria-label="Open image: Makeup artistry">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-5.jpg" alt="Makeup artist applying makeup to a client" class="js-img" loading="lazy">
+            <span class="gallery-cap">Makeup</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-6.jpg" aria-label="Open image: Hair colour">
+            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-6.jpg" alt="Hair colour being applied by a stylist" class="js-img" loading="lazy">
+            <span class="gallery-cap">Hair Colour</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-7.jpg" aria-label="Open image: Haircut">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-7.jpg" alt="Hairdresser giving a precise haircut" class="js-img" loading="lazy">
+            <span class="gallery-cap">Haircut</span>
+          </button>
+
+          <button type="button" class="gallery-item reveal" data-full="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=1400&q=85" data-fallback="assets/images/gallery-8.jpg" aria-label="Open image: Hair care">
+            <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&w=700&q=80" data-fallback="assets/images/gallery-8.jpg" alt="Smooth, healthy-looking hair after a treatment" class="js-img" loading="lazy">
+            <span class="gallery-cap">Hair Care</span>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REVIEWS ================= -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Reviews</p>
+          <h2>Kind <em>Words</em></h2>
+          <span class="gold-line center" aria-hidden="true"></span>
+          <p class="sample-label">Sample content for demonstration only. These are not real or verified customer reviews.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <figure class="review-card reveal">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“I felt listened to from the first minute. The stylist explained every option before starting, and I left feeling relaxed and happy.”</blockquote>
+            <figcaption><strong>Sample Customer A</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“A calm and clean space with a very friendly team. My facial was gentle and my skin felt fresh afterwards.”</blockquote>
+            <figcaption><strong>Sample Customer B</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+
+          <figure class="review-card reveal">
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+            <blockquote>“Our bridal trial was well planned and stress-free. Every small detail was discussed with us patiently.”</blockquote>
+            <figcaption><strong>Sample Customer C</strong><span>Sample testimonial</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT + APPOINTMENT FORM ================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head section-head-light reveal">
+          <p class="eyebrow">Get in Touch</p>
+          <h2>Visit or <em>Contact Us</em></h2>
+          <span class="gold-line center" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left side: contact details + map -->
+          <div class="contact-info reveal">
+            <ul class="contact-list">
+              <li>
+                <span class="ci-label">Address</span>
+                <!-- EDIT: apna real address yahan likho -->
+                <span class="ci-value">[Salon address placeholder: Street, Area, City, PIN]</span>
+              </li>
+              <li>
+                <span class="ci-label">Phone</span>
+                <!-- EDIT: real phone number yahan likho -->
+                <span class="ci-value">[+91 00000 00000]</span>
+              </li>
+              <li>
+                <span class="ci-label">Email</span>
+                <!-- EDIT: real email yahan likho -->
+                <span class="ci-value">[hello@example.com]</span>
+              </li>
+              <li>
+                <span class="ci-label">Opening Hours</span>
+                <!-- EDIT: real timing yahan likho -->
+                <span class="ci-value">[Mon – Sun: 00:00 AM – 00:00 PM]</span>
+              </li>
+            </ul>
+
+            <div class="map-placeholder" role="img" aria-label="Map placeholder. A real map will be added once the salon address is confirmed.">
+              <span>Map placeholder</span>
+              <small>Google Maps embed yahan aayega jab real address mil jayega.</small>
+            </div>
+          </div>
+
+          <!-- Right side: appointment enquiry form -->
+          <div class="form-card reveal" id="appointment">
+            <h3>Appointment Enquiry</h3>
+            <p class="form-intro">Fill in the form below. This is a demo form and does not send real enquiries.</p>
+
+            <form id="enquiryForm" novalidate>
+
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Your full name" aria-describedby="fullNameError" required>
+                <p class="error-msg" id="fullNameError" aria-live="polite"></p>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number" aria-describedby="phoneError" required>
+                  <p class="error-msg" id="phoneError" aria-live="polite"></p>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email <span class="optional">(optional)</span></label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" aria-describedby="emailError">
+                  <p class="error-msg" id="emailError" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service <span class="req" aria-hidden="true">*</span></label>
+                  <select id="service" name="service" aria-describedby="serviceError" required>
+                    <option value="">Select a service</option>
+                    <option>Haircut &amp; Styling</option>
+                    <option>Hair Spa</option>
+                    <option>Hair Colouring</option>
+                    <option>Facial &amp; Skincare</option>
+                    <option>Manicure &amp; Pedicure</option>
+                    <option>Bridal Makeup</option>
+                  </select>
+                  <p class="error-msg" id="serviceError" aria-live="polite"></p>
+                </div>
+                <div class="form-group">
+                  <label for="date">Preferred Date <span class="req" aria-hidden="true">*</span></label>
+                  <input type="date" id="date" name="date" aria-describedby="dateError" required>
+                  <p class="error-msg" id="dateError" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="optional">(optional)</span></label>
+                <textarea id="message" name="message" rows="4" maxlength="500" placeholder="Tell us anything that will help us prepare for your visit"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-block">Submit Enquiry</button>
+
+              <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo logo-footer" aria-label="Glow &amp; Grace Salon - Home">
+          Glow <span>&amp;</span> Grace
+          <small>Salon</small>
+        </a>
+        <p>Personalised beauty and self-care in a warm, elegant setting.</p>
+        <p class="footer-demo">Demo website. Not a real business.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <!-- EDIT: real details yahan bhi update karna -->
+          <li>[Salon address placeholder]</li>
+          <li>[+91 00000 00000]</li>
+          <li>[hello@example.com]</li>
+          <li>[Opening hours placeholder]</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <!-- EDIT: real social media links milne par href="#" ko replace karo -->
+        <ul class="social-list">
+          <li><a href="#" data-placeholder="true">Instagram (placeholder)</a></li>
+          <li><a href="#" data-placeholder="true">Facebook (placeholder)</a></li>
+          <li><a href="#" data-placeholder="true">YouTube (placeholder)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year">2026</span> Glow &amp; Grace Salon. All rights reserved.</p>
+        <a href="#top" class="to-top-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING BUTTONS ================= -->
+  <!-- EDIT: WhatsApp number format: country code + number, bina + ya spaces ke.
+       Example India: 919876543210. Abhi placeholder (0000000000) hai. -->
+  <a href="https://wa.me/910000000000?text=Hello%20Glow%20%26%20Grace%20Salon%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment."
+     class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp (opens in a new tab)">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16.04 3C8.84 3 3 8.8 3 15.95c0 2.28.6 4.5 1.74 6.46L3 29l6.76-1.7a13.1 13.1 0 0 0 6.28 1.6C23.2 28.9 29 23.1 29 15.95 29 8.8 23.2 3 16.04 3Zm0 23.7c-1.95 0-3.86-.52-5.53-1.5l-.4-.24-4.01 1.01 1.07-3.9-.26-.4a10.6 10.6 0 0 1-1.63-5.6c0-5.86 4.8-10.63 10.76-10.63 5.9 0 10.7 4.77 10.7 10.63 0 5.85-4.8 10.63-10.7 10.63Zm5.9-7.95c-.32-.16-1.9-.93-2.2-1.04-.3-.1-.5-.16-.72.16-.22.32-.83 1.04-1.02 1.26-.19.21-.38.24-.7.08-.32-.16-1.36-.5-2.6-1.6-.96-.85-1.6-1.9-1.8-2.22-.18-.32-.02-.5.14-.65.15-.14.32-.37.48-.56.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.72-1.72-.98-2.36-.26-.62-.52-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.65 0 1.57 1.15 3.08 1.3 3.3.16.2 2.26 3.44 5.46 4.82.76.33 1.36.52 1.82.67.77.24 1.46.2 2.01.12.61-.09 1.9-.78 2.16-1.52.27-.75.27-1.4.19-1.52-.08-.13-.3-.21-.62-.37Z"/>
+    </svg>
+  </a>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top" hidden>↑</button>
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Close image viewer">&times;</button>
+    <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Previous image">&#10094;</button>
+    <figure class="lb-figure">
+      <img src="" alt="" id="lbImage">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <!-- Apni JavaScript file (body ke end mein) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
